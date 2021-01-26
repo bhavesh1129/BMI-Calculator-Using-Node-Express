@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:wght@300;400;500&display=swap');
+        body {
+            /* background-color: #FFC300; */
+            background-image: linear-gradient(#FFC300, #E74C3C);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        .main-head {
+            font-family: "Carter One";
+            font-size: 70px;
+            margin: 3%;
+            margin-top: 5%;
+            text-shadow: 2px grey;
+            text-decoration: underline;
+        }
+        
+        .in-label {
+            font-family: "Montserrat";
+            font-weight: 500;
+            font-size: 3vw;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 6%;
+            font-family: 'Montserrat';
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/bmiCalculator" method="post">
+        <center>
+            <h1 class="main-head">BMI Calculator</h1>
+            <label class="in-label">Enter Your Weight: </label>
+            <input type="text" name="weight" placeholder="in kg">
+            <br><br>
+
+            <label class="in-label">Enter Your Height: </label>
+            <input type="text" name="height" placeholder="in cm">
+
+            <br><br><br>
+            <button type="calculate" name="calculate"><b>Calculate BMI</b></button>
+        </center>
+    </form>
+
+    <footer>Made with &#10084; by Bhavesh instructed by Angela Yu</footer>
+</body>
+
+</html>
